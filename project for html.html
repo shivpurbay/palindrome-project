@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="C:/Users/Sant kumar purbay/OneDrive/Desktop/.html/calendar.css">
+  
+    <title>Calendar</title>
+</head>
+<body onload="renderDate()">
+    <div class="titl">
+        <h2>Interactive Calendar</h2>
+    </div>
+    <div class=""></div>
+    <ul class="nav-links">
+        <li class="forward"><a href="F:\collage\SEM I\cse326\project\file2.html">Home</a></li>
+        <li class="forward"><a href="#" >ImportantEvents</a></li>
+        <li class="forward"><a href="#" >Holidays</a></li>
+        <li class="forward"><a href="#">About Us</a></li>
+    </ul>
+    <div class="wrapper">
+        <div class="calendar">
+            <div class="month">
+                <div class="prev" onclick="moveDate('prev')">
+                    <span>&#10094;</span>
+                </div>
+                <div>
+                    <h2 id="month"></h2>
+                    <p id="date_str"></p>
+                </div>
+                <div class="next" onclick="moveDate('next')">
+                    <span>&#10095;</span>
+                </div>
+            </div>
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="days">
+
+            </div>
+        </div>
+    </div>
+   <script src="C:/Users/Sant kumar purbay/OneDrive/Desktop/.html/calender.js"> </script>
+   <div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <div class="point">
+            <p style="padding: 30px;">Welcome To Your Web-Calender</p>
+        </div>
+        <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="Uder Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <!-- <input type="button" class="check-box" id="" value="Forget Password"> -->
+            <div class="forget-pass">
+                <a href="#">Forget Password</a>
+            </div>
+            <button type="submit" class="submit-btn">Log in</button>
+        </form>
+        <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="Uder Id" required>
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box" id=""> <span>I agree to the terms & condition</span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+</div>
+</body>
